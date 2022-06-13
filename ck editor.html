@@ -3,19 +3,24 @@
 <head>
     <meta charset="utf-8">
     <title>CKEditor 5 – Classic editor</title>
-    <script src="https://cdn.ckeditor.com/ckeditor5/34.1.0/classic/ckeditor.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="//cdn.ckeditor.com/4.18.0/standard/ckeditor.js"></script>
+
+    
 </head>
 <body>
     <h1>Classic editor</h1>
-    <div id="editor">
-        <p>예제.........</p>
-    </div>
+    <textarea id="cnDtl" style="width:100%;height:100%;" class="ckeditor" maxlength="100000"></textarea>
     <script>
-        ClassicEditor
-            .create( document.querySelector( '#editor' ) )
-            .catch( error => {
-                console.error( error );
-            } );
+ $(document).ready(function () {
+
+    console.log(CKEDITOR.config);
+    CKEDITOR.config.height = 300;
+    CKEDITOR.config.fullPage = true;
+    CKEDITOR.config.toolbarLocation = "bottom";
+  
+
+});
     </script>
 </body>
 </html>
