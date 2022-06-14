@@ -6,22 +6,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-    .text{
-    color:red;
-}
-    #gaga{
-        color:blue;
-    }
+    div{width: 100px; height: 100px; position: relative;}
+    div:nth-child(1){background-color: yellow;}
+    div:nth-child(2){background-color: cyan; bottom: 50px;}
+    div:nth-child(3){background-color: ivory; bottom: 100px;}
+    div:nth-child(4){background-color: mediumslateblue; bottom: 150px;}
+    .first{z-index: 1;}
+    .second{z-index: 2;}
     </style>
 </head>
 <body>
-    <h1 class="text" id="gaga">제목을 나타낸다</h1>
-
-    <p class="text">CSS 코드 작성 방법 & HTML 문서에 스타일시트 적용하는 방법입니다!
-        수업 하나당 10분 넘기지 않기가 목표인데</p>
-    <p>CSS 코드 작성 방법 & HTML 문서에 스타일시트 적용하는 방법입니다!
-            수업 하나당 10분 넘기지 않기가 목표인데</p>
-    <p>CSS 코드 작성 방법 & HTML 문서에 스타일시트 적용하는 방법입니다!
-                수업 하나당 10분 넘기지 않기가 목표인데</p>
+    <div class="first">1</div>
+    <div class="second">2</div>
+    <div class="third">3</div>
+    <div class="foruth">4</div>
 </body>
 </html>
